@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(230, 230, 230);
+}
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(196 88 239);
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(230, 230, 230) !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.subnav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(196 88 239);
+    z-index: 5;
+}
+.subnav a{
+    font-size: 19px;
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+.subnav a:hover{
+    border-bottom: 1px solid violet;
+    transition: all 0.5s;
+}
+.subnav i{
+    margin-right: 5px;
+}
+.navbar{
+    position: sticky;
+    top: -5px;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 50;
+}
+.navbar img{
+    width: 10%;
+    height: auto;
+}
+.nav a{
+    position: relative;
+    margin-right: 25px;
+    font-size: 19px;
+    color: rgb(138, 28, 241, 0.788) !important;
+    transition: all 0.5s;
+}
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: violet;
+    transform-origin: bottom right;
+    transition: transform 0.40s ease-out;
+}
+.cart{
+    color: rgb(138, 28, 241, 0.788) !important;
+    
+}
+.nav :hover a::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar input{
+    width: 250px !important;
+    margin-left: 50px;
+    border: 2px solid rgb(196 88 239);
+    padding-left: 15px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    outline: 0;
+    border: 0.5px solid rgb(196 88 239);
+    box-shadow: 0 0 2px 3px rgb(196 88 239);
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    padding: 8px 60px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 55;
+}
+.footer a{
+    color: violet;
+    text-decoration: none;
+}
+.footer .social i{
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 7px 10px;
+    color: rgb(230, 230, 230);
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 5s;
+}
+.footer .social .face{
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 7px 11px;
+    color: rgb(230, 230, 230);
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 5s;
+}
+.footer .social .face:hover{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    transition: all 5s;
+}
+.footer .social .snap{
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 7px 7px;
+    color: rgb(230, 230, 230);
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 5s;
+}
+.footer .social .snap:hover{
+    background: linear-gradient(to right, #d3cf00, #cccccc);
+    transition: all 5s;
+}
+.social .insta:hover{
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
